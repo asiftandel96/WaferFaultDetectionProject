@@ -122,3 +122,15 @@ app.py is the entry point of our application, where the flask server starts and 
 
 ![image](https://user-images.githubusercontent.com/61505882/129192931-0bc9e1a7-1819-4f70-b75b-2f053248e645.png)
 
+This is the PredictfromModel.py file where the predictions and  we are giving input to the model.
+
+![image](https://user-images.githubusercontent.com/61505882/129201700-35872883-b3a4-48d3-aa1c-4d9c3861fec3.png)
+
+
+![procfile](https://user-images.githubusercontent.com/61505882/129202225-391adc4c-8d5d-4ed7-9849-f26b8e86a134.jpg)
+
+Procfile :- It contains the entry point of the app.
+
+
+![image](https://user-images.githubusercontent.com/61505882/129202472-9d5399b5-960e-48cb-907a-a57138945702.png)
+
