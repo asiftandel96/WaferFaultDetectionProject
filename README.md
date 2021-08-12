@@ -116,7 +116,9 @@ Now let’s see the Wafer fault Detection project folder structure.
 
 requirements.txt file consists of all the packages that you need to deploy the app in the cloud.
 
+![image](https://user-images.githubusercontent.com/61505882/129192502-86181081-addf-4d08-80a7-d5478ea11784.png)
 
+app.py is the entry point of our application, where the flask server starts and then we will be making predictions.
 
-
+![image](https://user-images.githubusercontent.com/61505882/129192931-0bc9e1a7-1819-4f70-b75b-2f053248e645.png)
 
