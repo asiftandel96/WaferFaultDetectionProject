@@ -2,7 +2,7 @@
 
 Project Link - https://waferfaultdetect.herokuapp.com/
 
-
+![AnimationScreen](https://user-images.githubusercontent.com/61505882/129208003-54e4e06d-da1b-4325-9c5d-a28211601cee.gif)
 
 
 Problem Statement:-
