@@ -114,6 +114,8 @@ Now let’s see the Wafer fault Detection project folder structure.
 
 ![image](https://user-images.githubusercontent.com/61505882/129191726-10e266d2-b0aa-4d7b-92f3-852c8ef75d9c.png)
 
+requirements.txt file consists of all the packages that you need to deploy the app in the cloud.
+
 
 
 
