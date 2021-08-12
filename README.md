@@ -3,6 +3,8 @@
 Project Link - https://waferfaultdetect.herokuapp.com/
 
 
+
+
 Problem Statement:-
 
 The inputs of various sensors for different wafers have been provided. In electronics, a wafer (also called a slice or substrate) is a thin slice of semiconductor used for the fabrication of integrated circuits. The goal is to build a machine learning model which predicts whether a wafer needs to be replaced or not(i.e., whether it is working or not) based on the inputs from various sensors. There are two classes: +1 and -1. 
@@ -143,6 +145,7 @@ Procfile :- It contains the entry point of the app.
 ![image](https://user-images.githubusercontent.com/61505882/129202472-9d5399b5-960e-48cb-907a-a57138945702.png)
 
 runtime.txt:- It contains the Python version number.
+
 
 
 
