@@ -112,6 +112,14 @@ We will be deploying the model to the Heroku Cloud Platform
 
 Now let’s see the Wafer fault Detection project folder structure.
 
+The file that is required to deploy the application in Heroku:-
+
+1)requirements.txt
+
+2)Procfile
+
+3)runtime.txt
+
 ![image](https://user-images.githubusercontent.com/61505882/129191726-10e266d2-b0aa-4d7b-92f3-852c8ef75d9c.png)
 
 requirements.txt file consists of all the packages that you need to deploy the app in the cloud.
@@ -133,4 +141,9 @@ Procfile :- It contains the entry point of the app.
 
 
 ![image](https://user-images.githubusercontent.com/61505882/129202472-9d5399b5-960e-48cb-907a-a57138945702.png)
+
+runtime.txt:- It contains the Python version number.
+
+
+
 
