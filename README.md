@@ -125,6 +125,10 @@ Data Insertion in Database:-
 3) Insertion of files in the table - All the files in the "Good_Data_Folder" are inserted in the above-created table. If any file has invalid data type in any of the columns, the file is not loaded in the table and is moved to "Bad_Data_Folder".
 
 
+![dboperationfile](https://user-images.githubusercontent.com/61505882/129378620-368588ca-cbfb-40f8-90ca-8e1b81784147.gif)
+
+
+
 Prediction:-
  
 1) Data Export from Db - The data in the stored database is exported as a CSV file to be used for prediction.
@@ -138,6 +142,9 @@ Prediction:-
 4) Prediction - Based on the cluster number, the respective model is loaded and is used to predict the data for that cluster.
 
 5) Once the prediction is made for all the clusters, the predictions along with the Wafer names are saved in a CSV file at a given location and the location is returned to the client.
+
+![predictioncode](https://user-images.githubusercontent.com/61505882/129380668-4bad7440-f45d-45a5-9c01-f530f49bed3e.gif)
+
 
 ![PredictionSucess](https://user-images.githubusercontent.com/61505882/129366204-79bee388-c0c7-489a-9525-96a0e187b65b.JPG)
 
