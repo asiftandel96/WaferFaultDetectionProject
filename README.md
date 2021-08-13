@@ -36,7 +36,8 @@ The client will send data in multiple sets of files in batches at a given locati
 Apart from training files, we also require a "schema" file from the client, which contains all the relevant information about the training files such as:
 Name of the files, Length of Date value in FileName, Length of Time value in FileName, Number of Columns, Name of the Columns, and their datatype.
 
-![CaptureSchema](https://user-images.githubusercontent.com/61505882/129366770-136ff6e2-12f0-4e4d-819f-fc48fe209fc4.JPG)
+![schematraining](https://user-images.githubusercontent.com/61505882/129371306-0a490dd9-d99b-48fe-87d9-5ad44844c8e2.gif)
+
 
  
 Data Validation:-
