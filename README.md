@@ -1,6 +1,8 @@
-                                                  Wafer Fault Detection Project
+                                                 Wafer Fault Detection Project
 
 Project Link - https://waferfaultdetect.herokuapp.com/
+
+Project Demo:-
 
 ![AnimationScreen](https://user-images.githubusercontent.com/61505882/129208003-54e4e06d-da1b-4325-9c5d-a28211601cee.gif)
 
@@ -33,6 +35,9 @@ The client will send data in multiple sets of files in batches at a given locati
 
 Apart from training files, we also require a "schema" file from the client, which contains all the relevant information about the training files such as:
 Name of the files, Length of Date value in FileName, Length of Time value in FileName, Number of Columns, Name of the Columns, and their datatype.
+
+![CaptureSchema](https://user-images.githubusercontent.com/61505882/129366770-136ff6e2-12f0-4e4d-819f-fc48fe209fc4.JPG)
+
  
 Data Validation:-
 
@@ -48,6 +53,9 @@ In this step, we perform different sets of validation on the given set of traini
 
 5.	Null values in columns - If any of the columns in a file have all the values as NULL or missing, we discard such a file and move it to "Bad_Data_Folder".
 
+![RawFile](https://user-images.githubusercontent.com/61505882/129368623-05a0571e-5209-43f5-8068-34d851935c94.gif)
+
+
 Data Insertion in Database:-
  
 1) Database Creation and connection - Create a database with the given name passed. If the database is already created, open the connection to the database. 
@@ -55,6 +63,9 @@ Data Insertion in Database:-
 2) Table creation in the database - Table with name - "Good_Data", is created in the database for inserting the files in the "Good_Data_Folder" based on given column names and datatype in the schema file. If the table is already present, then the new table is not created and new files are inserted in the already present table as we want training to be done on new as well as old training files.     
 
 3) Insertion of files in the table - All the files in the "Good_Data_Folder" are inserted in the above-created table. If any file has invalid data type in any of the columns, the file is not loaded in the table and is moved to "Bad_Data_Folder".
+
+![DBOperation](https://user-images.githubusercontent.com/61505882/129369676-1365b3c4-ffde-4b4e-82ba-c624abba7b23.gif)
+
  
 Model Training:-
 
@@ -68,6 +79,13 @@ Model Training:-
    To train data in different clusters. The Kmeans model is trained over preprocessed data and the model is saved for further use in prediction.
 
 4) Model Selection - After clusters are created, we find the best model for each cluster. We are using two algorithms, "Random Forest" and "XGBoost". For each cluster, both the algorithms are passed with the best parameters derived from GridSearch. We calculate the AUC scores for both models and select the model with the best score. Similarly, the model is selected for each cluster. All the models for every cluster are saved for use in prediction.
+
+![ModelTraining](https://user-images.githubusercontent.com/61505882/129370319-15c83f34-942c-43b0-aef7-2b8c6933a3a4.gif)
+
+
+
+![TrainingSucessful](https://user-images.githubusercontent.com/61505882/129366047-f616fa52-6df4-4067-8398-0cba7816bf3f.JPG)
+
  
  
  
@@ -111,6 +129,9 @@ Prediction:-
 4) Prediction - Based on the cluster number, the respective model is loaded and is used to predict the data for that cluster.
 
 5) Once the prediction is made for all the clusters, the predictions along with the Wafer names are saved in a CSV file at a given location and the location is returned to the client.
+
+![PredictionSucess](https://user-images.githubusercontent.com/61505882/129366204-79bee388-c0c7-489a-9525-96a0e187b65b.JPG)
+
  
 Deployment
 
