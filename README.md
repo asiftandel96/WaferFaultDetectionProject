@@ -95,6 +95,9 @@ Prediction Data Description:-
 Client will send the data in multiple set of files in batches at a given location. Data will contain Wafer names and 590 columns of different sensor values for each wafer. 
 Apart from prediction files, we also require a "schema" file from client which contains all the relevant information about the training files such as:
 Name of the files, Length of Date value in FileName, Length of Time value in FileName, Number of Columns, Name of the Columns and their datatype.
+
+![schemaprediction_1](https://user-images.githubusercontent.com/61505882/129373317-91191dc4-c285-46a2-8664-4a2dffd6f690.gif)
+
  
 Data Validation:-
 
