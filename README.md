@@ -113,6 +113,8 @@ In this step, we perform different sets of validation on the given set of traini
 
 5) Null values in columns - If any of the columns in a file has all the values as NULL or missing, we discard such file and move it to "Bad_Data_Folder".  
 
+![schemarawvalidation_1](https://user-images.githubusercontent.com/61505882/129377100-406338f7-18b9-432b-90b7-9b2686190501.gif)
+
 
 Data Insertion in Database:-
 
@@ -121,6 +123,7 @@ Data Insertion in Database:-
 2) Table creation in the database - Table with name - "Good_Data", is created in the database for inserting the files in the "Good_Data_Folder" on the basis of given column names and datatype in the schema file. If table is already present then new table is not created, and new files are inserted the already present table as we want training to be done on new as well old training files.     
 
 3) Insertion of files in the table - All the files in the "Good_Data_Folder" are inserted in the above-created table. If any file has invalid data type in any of the columns, the file is not loaded in the table and is moved to "Bad_Data_Folder".
+
 
 Prediction:-
  
